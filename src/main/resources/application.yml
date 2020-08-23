@@ -1,0 +1,12 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      topic: consumer-topic
+      group-id: dev-consumerGroup
+    producer:
+      topic: producer-topic
+
+logging:
+  level:
+    org.springframework.kafka.*: DEBUG
